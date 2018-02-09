@@ -16,6 +16,10 @@ Route::group(['prefix' =>'admin', 'namespace' => 'App\Modules\Admin\Controllers'
         return view('Admin::pages.product.edit');
     });
 
+    Route::get('/create', function (){
+        return view('Admin::pages.product.create');
+    });
+
     Route::get('/profile', function(){
        return view('Admin::pages.profile.index');
     });

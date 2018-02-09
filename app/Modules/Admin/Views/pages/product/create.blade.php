@@ -37,6 +37,18 @@
                         </div>
 
                     </div>
+                    <div class="form-group">
+                        <label >Hình đại diện:</label>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-success">
+                                    <i class="fa fa-picture-o"></i> Chọn
+                                </a>
+                            </span>
+                            <input id="thumbnail" class="form-control" type="hidden" name="img_url">
+                        </div>
+                        <img id="holder" style="margin-top:15px;max-height:100px;">
+                    </div>
                     <!--/.row-->
 
                     <div class="form-group">
@@ -46,6 +58,7 @@
 
                 </div>
                 <div class="card-footer">
+                    <a class="btn btn-sm btn-warning text-white" href="{!! url()->previous() !!}"><i class="fa fa-backward"></i> Cancel</a>
                     <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Save</button>
                 </div>
             </div>
